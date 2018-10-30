@@ -1,0 +1,55 @@
+{% load static %}
+
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "home/stylehome.css" %}">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  </head>
+  <body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="{% url 'chemical:index' %}">Chemical</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <!-- <form type="get" action "." class = "search-bar">
+          <input id="search_box" type="text" name="search_box" placeholder="Search...">
+          <button id="search_submit" type="submit">Submit</button>
+        </form> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="parent" class="mdh-expandable-search centered">
+        <i class="material-icons">search</i>
+        <form id="search_box" action="/" method="get">
+          <input type="text" placeholder="Search" size="1" name="q">
+        </form>
+      </div>
+      </main>
+    </div>
+  </body>
+</html>
